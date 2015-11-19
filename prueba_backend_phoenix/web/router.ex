@@ -17,7 +17,7 @@ defmodule PruebaBackendPhoenix.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    get "/hola", HolaController, :index
+    resources "/books", BookController
   end
 
   # Other scopes may use custom stacks.
